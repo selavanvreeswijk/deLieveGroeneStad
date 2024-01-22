@@ -17,6 +17,7 @@ h1, h2{
     font-family: 'DirtDevil', sans-serif; 
     letter-spacing: 0.04em;
     font-size: 2em;
+    color: #e8a72f;
   }
 
 html{
@@ -28,12 +29,19 @@ html{
 
 p{
     line-height: 1.5em;
-    color: black;
+}
+
+body{
+    margin-bottom: 7em;
 }
 
 /* body header */
 
 /*------------------------------------------index------------------------------------------------*/
+
+.index{
+    margin-bottom: 2em;
+}
 
 .index header{
     display: flex;
@@ -46,13 +54,19 @@ p{
     height: 13em;
 }
 
-.index header h1,h2{
+.index header h1{
     margin-top: 1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
+}
+
+.index header h2{
+    margin: 0.8em 0.1em 0.2em 0.1em;
+    font-size: 1.7em;
 }
 
 .index header p{
     font-size: 0.8em;
+    margin-bottom: 1em;
 }
 
 /*------------------------------------------overige pagina's nav------------------------------------------------*/
@@ -74,6 +88,8 @@ header img{
 
 header p{
     font-size: 1em;
+    color: black;
+    margin-top: 0.5em;
 }
 
 /* body main */
@@ -91,7 +107,7 @@ header p{
     align-items: center;
 }
 
-.index div img{ 
+.index div img{
     margin-bottom: 1.1em;
     object-fit: cover;
     height: 3.6em;
@@ -100,19 +116,34 @@ header p{
 .index nav{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+    margin-left: 1em;
+    margin-right: 2.1em;
 }
 
 .index nav img{ 
    object-fit: cover;
    height: 4em;
 
-   margin-bottom: 2em;
+   margin-bottom: 1em;
 }
 
 /*------------------------------------------tweede pagina------------------------------------------------*/
 
-.voorgrondplaatje{ /*bij wortels tweede*/
+.voorgrondplaatje{ /*voor screen readers*/
     display: none;
+}
+
+.tweede{
+   background-image: url(../images/wortels-achtergrond.png);
+   background-size: cover;
+
+   position: absolute;
+}
+
+.tweede footer{
+    margin-bottom: 7em;
 }
 
 .tweede article{
@@ -120,12 +151,19 @@ header p{
     flex-direction: column;
     align-items: flex-start;
 
-    margin-top: 3em;
+    margin-top: 20em;
+    margin-left: 1em;
+    margin-bottom: 2em;
 }
 
 .tweede article img{
     margin-left: 2em;
     height: 3em;
+    margin-top: 1em;
+}
+
+.tweede article p{
+    font-size: 0.9em;
 }
 
 .tweede section{
@@ -137,17 +175,22 @@ header p{
 }
 
 .tweede h1{
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
 }
 
 .tweede section img{
     object-fit: cover;
     height: 10em;
-    margin-top: 1em;
+    margin-top: 1.5em;
     margin-bottom: 1em;
 }
 
-.tweede main a{
+.tweede section img:first-of-type{
+    align-self: flex-end;
+    margin-right: 1em;
+}
+
+.tweede main nav a{
     text-decoration: none;
     color: black;
 }
@@ -179,6 +222,7 @@ header p{
     font-size: 1em;
   
     border: 1px solid black;
+    background-color: white;
     border-radius: 1.20em;
     width: 35%;
 
@@ -196,13 +240,18 @@ header p{
     margin: 1.2em;
 }
 
+.bovenaan img{
+    height: 15em;
+    margin-top: 1em;
+}
+
 .derde h1{
     margin-top: 0.1em;
     margin-bottom: 0.5em;
 }
 
 .derde section p{
-    margin-bottom: 0.9em;
+    margin-top: 0.9em;
 }
 
 .flex{
@@ -217,13 +266,14 @@ header p{
 }
 
 .flex img{
-    height: 9em;
+    height: 8em;
 }
 
 .babyflex{
     display: flex;
     flex-direction: row;
-    background-color: hotpink;
+    background-color: #4B3E30;
+    border: 4px solid #B89671;
     border-radius: 0.5em;
 
     margin-bottom: 1em;
@@ -237,24 +287,34 @@ header p{
     padding: 0.5em;
 }
 
-.derde div a{
+.babyflex h3{
+    color: rgb(221, 155, 117);
+}
+
+.babyflex section p{
+    color: rgb(221, 155, 117);
+}
+
+.button{
+    display: block;
+    margin: 0 auto;
     text-align: center;
 
     color: black;
     text-decoration: none;
   
-    border: 0.75px solid black;
+    border: 1.25px solid black;
+    background-color: white;
     border-radius: 1.20em;
 
-    padding-left:0.5em;
-    padding-right: 0.5em;
-
-    margin-bottom: 2em;
+    max-width: 55%;
+    padding: 0.2em;
 }
 
 .babyflex section a{
     font-size: 0.6em;
-    color: black;
+    color: rgb(221, 186, 167);
+    margin-top: 0.5em;
 
     border: none;
     text-decoration: underline;
@@ -286,28 +346,46 @@ header p{
     flex-direction: column;
     align-items: center;
 
-    margin-top: 1.5em;
-    margin-bottom: 2em;
+    margin-top: 2em;
 }
 
-.vierde main section{
+.vierde section{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
-    margin: 2em;
+    padding: 0em 2.1em 2.2em 2.2em;
 
-    background-color: hotpink;
-    border-radius: 1em;
+    background-image: url(../images/moestuinachtergrond.png);
+    background-size: cover;
+
+    margin-top:0.5em;
 }
 
-.vierde main section img, h2{
+.vierde main section h2{
     align-self: center;
     font-size: 1.4em;
+    margin-top: 2.5em;
+    color: rgb(221, 155, 117);
+}
+
+.vierde main img{
+    height: 13em;
+    align-self: center;
 }
 
 .vierde main section p{
-    padding: 1em;
+    padding: 0em 1.2em;
+    color: rgb(221, 155, 117);
+}
+
+.vierde main section p a{
+    color: rgb(221, 186, 167);
+}
+
+.vierde main div{
+    margin-top: 3em;
+    margin-bottom: 1em;
 }
 
 .vierde main div a{
@@ -316,13 +394,11 @@ header p{
     color: black;
     text-decoration: none;
   
-    border: 0.75px solid black;
+    border: 1.25px solid black;
+    background-color: white;
     border-radius: 1.20em;
 
-    padding-left:0.5em;
-    padding-right: 0.5em;
-
-    margin-bottom: 2em;
+    padding: 0.5em;
 }
 
 .vierde nav ul{
@@ -346,47 +422,69 @@ header p{
 
 /*------------------------------------------vijfde pagina------------------------------------------------*/
 
+.vijfde{
+    background-image: url(../images/wolken-achtergrond.png);
+    background-size: cover;
+
+    position: absolute;
+    left:0;
+    right:0;
+ }
+
+.vijfde footer{
+    margin-bottom: 7em;
+}
+
 .vijfde section{
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    margin-top: 2em;
+    margin-top: 6.8em;
     margin-bottom: 2em;
 }
 
-.vijfde main section p{
+.vijfde section p{
     margin-top: 0.5em;
 }
 
-.vijfde main section img{
-    height: 5em;
-    margin-top: 1em;
+.vijfde section img{
+    object-fit: cover;
+    height: 6em;
+    margin-top: 6em;
 }
 
-.vijfde main div{
+strong{
+    font-weight: 800;
+}
+
+.vijfde div{
     display: flex;
     flex-direction: column;
 }
 
-.vijfde main div p:nth-of-type(odd){
+.vijfde div p:nth-of-type(odd){
     width: 250px;
-
-    background-color: rgb(255, 255, 255);
+    margin-bottom: 2em;
+    margin-top: 5em;
+    margin-left: 1em;
+    color: rgb(221, 155, 117);
 }
 
-.vijfde main div p:nth-of-type(even){
+.vijfde div p:nth-of-type(even){
     align-self: flex-end;
     width: 300px;
-
-    background-color: rgb(248, 191, 217);
-}
-
-.vijfde main{
+    margin-top: 8em;
     margin-bottom: 2em;
+    margin-right: 1em;
+    color: rgb(221, 155, 117);
 }
 
-.vijfde nav ul{
+.vijfde div p a{
+    color: rgb(221, 186, 167);
+}
+
+.vijfde ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -405,9 +503,16 @@ header p{
     padding: 1em;
 }
 
-.tweede main,
-.derde main,
-.vierde main,
-.vijfde main{
-    margin-bottom: 7em;
+/* footer */
+
+footer p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: 0.8em;
+    margin-top: 2em;
+
+    text-decoration: underline;
+    color: black;
 }
