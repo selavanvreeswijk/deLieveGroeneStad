@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:'DirtDevil';
+    src: url('../fonts/dirt.TTF') format('TrueType');
+}
+
+@font-face {
+    font-family:'Antigoni';
+    src: url('../fonts/anti.TTF') format('TrueType');
+}
+
+h1, h2{
+    font-family: 'DirtDevil', sans-serif; 
+    letter-spacing: 0.04em;
+    font-size: 2em;
+  }
+
+html{
+    background-color: #DCE5B9;
+
+    font-family: 'Antigoni', sans-serif; 
+    letter-spacing: 0.01em;
+}
+
+p{
+    line-height: 1.5em;
+    color: black;
+}
+
+/* body header */
+
+/*------------------------------------------index------------------------------------------------*/
+
+.index header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index header img{
+    object-fit: cover;
+    height: 13em;
+}
+
+.index header h1,h2{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.index header p{
+    font-size: 0.8em;
+}
+
+/*------------------------------------------overige pagina's nav------------------------------------------------*/
+
+header a{
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+
+    text-decoration: none;
+}
+
+header img{
+    object-fit: cover;
+    height: 5em;
+}
+
+header p{
+    font-size: 1em;
+}
+
+/* body main */
+
+/*------------------------------------------index------------------------------------------------*/
+
+.index main p{ 
+    margin: 0em 1.5em 2em 1.5em;
+    text-align: center;
+}
+
+.index div{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index div img{ 
+    margin-bottom: 1.1em;
+    object-fit: cover;
+    height: 3.6em;
+}
+
+.index nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.index nav img{ 
+   object-fit: cover;
+   height: 4em;
+
+   margin-bottom: 2em;
+}
+
+/*------------------------------------------tweede pagina------------------------------------------------*/
+
+.voorgrondplaatje{ /*bij wortels tweede*/
+    display: none;
+}
+
+.tweede article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-top: 3em;
+}
+
+.tweede article img{
+    margin-left: 2em;
+    height: 3em;
+}
+
+.tweede section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 1em;
+}
+
+.tweede h1{
+    margin-bottom: 0.5em;
+}
+
+.tweede section img{
+    object-fit: cover;
+    height: 10em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.tweede main a{
+    text-decoration: none;
+    color: black;
+}
+
+.tweede nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    background-color: white;
+    border-radius: 4em;
+    list-style: none;
+
+    position: fixed;
+    bottom: 0.5em;
+    left: 3.2em;
+}
+
+.tweede nav img{
+    height: 3em;
+    padding: 1em;
+}
+
+.tweede section a{
+    text-align: center;
+
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+  
+    border: 1px solid black;
+    border-radius: 1.20em;
+    width: 35%;
+
+    margin: 1.20em;
+    padding: 0.2em;
+}
+
+/*------------------------------------------derde pagina------------------------------------------------*/
+
+.bovenaan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 1.2em;
+}
+
+.derde h1{
+    margin-top: 0.1em;
+    margin-bottom: 0.5em;
+}
+
+.derde section p{
+    margin-bottom: 0.9em;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+
+    margin: 1em;
+}
+
+.flex p{
+    font-size: 0.6em;
+}
+
+.flex img{
+    height: 9em;
+}
+
+.babyflex{
+    display: flex;
+    flex-direction: row;
+    background-color: hotpink;
+    border-radius: 0.5em;
+
+    margin-bottom: 1em;
+}
+
+.babyflex section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 0.5em;
+}
+
+.derde div a{
+    text-align: center;
+
+    color: black;
+    text-decoration: none;
+  
+    border: 0.75px solid black;
+    border-radius: 1.20em;
+
+    padding-left:0.5em;
+    padding-right: 0.5em;
+
+    margin-bottom: 2em;
+}
+
+.babyflex section a{
+    font-size: 0.6em;
+    color: black;
+
+    border: none;
+    text-decoration: underline;
+}
+
+.derde nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    background-color: white;
+    border-radius: 4em;
+    list-style: none;
+
+    position: fixed;
+    bottom: 0.5em;
+    left: 3.2em;
+}
+
+.derde nav img{
+    height: 3em;
+    padding: 1em;
+}
+
+/*------------------------------------------vierde pagina's------------------------------------------------*/
+
+.vierde main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.vierde main section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 2em;
+
+    background-color: hotpink;
+    border-radius: 1em;
+}
+
+.vierde main section img, h2{
+    align-self: center;
+    font-size: 1.4em;
+}
+
+.vierde main section p{
+    padding: 1em;
+}
+
+.vierde main div a{
+    text-align: center;
+
+    color: black;
+    text-decoration: none;
+  
+    border: 0.75px solid black;
+    border-radius: 1.20em;
+
+    padding-left:0.5em;
+    padding-right: 0.5em;
+
+    margin-bottom: 2em;
+}
+
+.vierde nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    background-color: white;
+    border-radius: 4em;
+    list-style: none;
+
+    position: fixed;
+    bottom: 0.5em;
+    left: 3.2em;
+}
+
+.vierde nav img{
+    height: 3em;
+    padding: 1em;
+}
+
+/*------------------------------------------vijfde pagina------------------------------------------------*/
+
+.vijfde section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.vijfde main section p{
+    margin-top: 0.5em;
+}
+
+.vijfde main section img{
+    height: 5em;
+    margin-top: 1em;
+}
+
+.vijfde main div{
+    display: flex;
+    flex-direction: column;
+}
+
+.vijfde main div p:nth-of-type(odd){
+    width: 250px;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.vijfde main div p:nth-of-type(even){
+    align-self: flex-end;
+    width: 300px;
+
+    background-color: rgb(248, 191, 217);
+}
+
+.vijfde main{
+    margin-bottom: 2em;
+}
+
+.vijfde nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    background-color: white;
+    border-radius: 4em;
+    list-style: none;
+
+    position: fixed;
+    bottom: 0.5em;
+    left: 3.2em;
+}
+
+.vijfde nav img{
+    height: 3em;
+    padding: 1em;
+}
+
+.tweede main,
+.derde main,
+.vierde main,
+.vijfde main{
+    margin-bottom: 7em;
+}
