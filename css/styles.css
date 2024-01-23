@@ -39,10 +39,6 @@ body{
 
 /*------------------------------------------index------------------------------------------------*/
 
-.index{
-    margin-bottom: 2em;
-}
-
 .index header{
     display: flex;
     flex-direction: column;
@@ -96,8 +92,15 @@ header p{
 
 /*------------------------------------------index------------------------------------------------*/
 
+.index{
+    background-image: url(../images/groeneweg.png);
+    background-size: cover;
+
+    position: absolute;
+}
+
 .index main p{ 
-    margin: 0em 1.5em 2em 1.5em;
+    margin: 1em 1.5em 2em 1.5em;
     text-align: center;
 }
 
@@ -126,7 +129,7 @@ header p{
    object-fit: cover;
    height: 4em;
 
-   margin-bottom: 1em;
+   margin-bottom: 2em;
 }
 
 /*------------------------------------------tweede pagina------------------------------------------------*/
@@ -231,7 +234,6 @@ header p{
 }
 
 /*------------------------------------------derde pagina------------------------------------------------*/
-
 .bovenaan{
     display: flex;
     flex-direction: column;
@@ -273,7 +275,7 @@ header p{
     display: flex;
     flex-direction: row;
     background-color: #4B3E30;
-    border: 4px solid #B89671;
+    border: 3px solid #B89671;
     border-radius: 0.5em;
 
     margin-bottom: 1em;
