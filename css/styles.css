@@ -24,7 +24,7 @@ html{
     background-color: #DCE5B9;
 
     font-family: 'Antigoni', sans-serif; 
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
 }
 
 p{
@@ -93,7 +93,7 @@ header p{
 /*------------------------------------------index------------------------------------------------*/
 
 .index{
-    background-image: url(../images/groeneweg.png);
+    background-image: url(../images/groeneweg.png); /* bron icoon weg https://www.youtube.com/watch?v=1Q1ESDwQ_Uk&list=PLVIHEPTP4QFdnVX4B7mAwk8GMjXNJg9JG&index=13&t=115s*/
     background-size: cover;
 
     position: absolute;
@@ -139,7 +139,7 @@ header p{
 }
 
 .tweede{
-   background-image: url(../images/wortels-achtergrond.png);
+   background-image: url(../images/wortels-achtergrond.png); /*bron wortels maken https://www.youtube.com/watch?v=qtJmvmi5mPM&list=PLVIHEPTP4QFdnVX4B7mAwk8GMjXNJg9JG&index=19&t=205s*/
    background-size: cover;
 
    position: absolute;
@@ -250,10 +250,35 @@ header p{
 .derde h1{
     margin-top: 0.1em;
     margin-bottom: 0.5em;
+    animation: kleurentekst 5s linear 3s infinite normal none running;
+}
+
+@keyframes kleurentekst {
+    0% {
+        color: #e8a72f;
+    }
+  
+    25% {
+        color: #eac580;
+    }
+    
+    75% {
+      color: #f7d189;
+    }
+    
+    100%{
+      color: #ffc250;
+    }
+}
+
+.derde h2{
+    font-family: 'Antigoni', sans-serif;
+    font-size: 1.3em;
+    color: rgb(221, 155, 117);
 }
 
 .derde section p{
-    margin-top: 0.9em;
+    margin-top: 0.1em;
 }
 
 .flex{
@@ -264,7 +289,7 @@ header p{
 }
 
 .flex p{
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 
 .flex img{
@@ -289,10 +314,6 @@ header p{
     padding: 0.5em;
 }
 
-.babyflex h3{
-    color: rgb(221, 155, 117);
-}
-
 .babyflex section p{
     color: rgb(221, 155, 117);
 }
@@ -307,7 +328,7 @@ header p{
   
     border: 1.25px solid black;
     background-color: white;
-    border-radius: 1.20em;
+    border-radius: 1em;
 
     max-width: 55%;
     padding: 0.2em;
@@ -366,9 +387,10 @@ header p{
 
 .vierde main section h2{
     align-self: center;
-    font-size: 1.4em;
-    margin-top: 2.5em;
+    font-size: 2em;
+    margin-top: 1.6em;
     color: rgb(221, 155, 117);
+    font-family: 'Antigoni', sans-serif; 
 }
 
 .vierde main img{
@@ -446,10 +468,6 @@ header p{
     margin-bottom: 2em;
 }
 
-.vijfde section p{
-    margin-top: 0.5em;
-}
-
 .vijfde section img{
     object-fit: cover;
     height: 6em;
@@ -505,16 +523,3 @@ strong{
     padding: 1em;
 }
 
-/* footer */
-
-footer p{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    font-size: 0.8em;
-    margin-top: 2em;
-
-    text-decoration: underline;
-    color: black;
-}
