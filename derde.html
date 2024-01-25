@@ -11,22 +11,26 @@
     <body class="derde"> 
         <header>
             <a href="index.html">
-                <img src="./images/logomain.png" alt="Logo website, een schep in de aarde">
+                <img src="./images/logo.png" alt="Logo website, een schep in de aarde">
                     
                 <p>de Groene <br>Leerweg</p>
             </a> 
         </header>
 
         <main>
-            <section class="bovenaan">
+            <section class="bovenaan"> <!--class, anders pakt hij bij :first-of-type ook section die onder in div-->
                 <h1>Tips</h1>
 
                 <p>Het initiatief legt de nadruk op duurzaamheid, plantaardig voedsel, biologische teelt en korte voedselketens.</p>
 
-                <p>Leer hier hoe je jouw groene leerproces alvast in gang kan zetten voordat je aan een moestuin begint. Of wordt gewoonweg geïnspireerd. 
+                <p>Leer hier hoe je jouw groene leerproces alvast in gang kan zetten voordat je aan een moestuin begint. Of raak gewoonweg geïnspireerd. 
                 Laten we samen onze groene vingers ontdekken!</p>
 
-                <img src="./images/groenduimpie.png" alt="Persoon met groene duim omhoog">
+                <!-- <img src="./images/groeneduim.png" alt="Persoon met groene duim omhoog"> -->
+                <div>
+                    <img src="./images/persoonzonderduim.png" alt="Persoon zonder duim">
+                    <img src="./images/duim.png" alt="Een duim">
+                </div>
             </section>
     
             <div class="flex">
@@ -35,14 +39,14 @@
 
                     <section>
                         <h2>Mini moestuin</h2>
-                        <p>Een moestuin hoeft niet gelijk groot te zijn. Denk ook aak kruidenplantjes in de keuken. Klein, toch leuk en duurzaam.
-                        </p>
+                        <p>Een moestuin hoeft niet gelijk groot te zijn. Denk ook aak kruidenplantjes in de keuken. 
+                            Klein, maar toch leuk en leerzaam.</p>
                         <a href="vierde-minimoestuin.html">Lees meer...</a>
                     </section>
                 </div>
 
                 <div class="babyflex">
-                    <img src="./images/bewustpersoon.png" alt="Bewust nadenken">
+                    <img src="./images/bewustpersoon.png" alt="Persoon in lotushouding met een groen blaadje = bewust nadenken">
 
                     <section>
                         <h2>Eet bewust</h2>
@@ -53,7 +57,7 @@
                 </div>
 
                 <div class="babyflex">
-                    <img src="./images/groenpraten.png" alt="Inspiratie opdoen">
+                    <img src="./images/groenpraten.png" alt="Een tekstwolk met de tekst 'talk green to me' erin">
 
                     <section>
                         <h2>Inspiratie opdoen</h2>
@@ -65,7 +69,7 @@
                 </div>
 
                 <div class="babyflex">
-                    <img src="./images/kamerplant.png" alt="Kamerplant">
+                    <img src="./images/kamerplant.png" alt="Een kamperplant, Draceana white stripe">
 
                     <section>
                         <h2>Kamerplanten</h2> 
@@ -75,7 +79,7 @@
                 </div>
 
                 <div class="babyflex">
-                    <img src="./images/bioicoon.png" alt="Biologisch eten">
+                    <img src="./images/bioicoon.png" alt="Bio icoon, twee bladeren en een waaruit een hap is genomen">
 
                     <section>
                         <h2>Eet biologisch</h2>
@@ -83,20 +87,19 @@
                         <a href="vierde-biologisch.html">Lees meer...</a>
                     </section>    
                 </div>
-
             </div>
-
-            <a href="vijfde.html" class="button">Waarom is dit zo belangrijk?</a>
         </main>
+
 
         <footer>
             <nav>
-                <ul>
-                    <li><a href="./tweede.html"><img src="./images/boek.png"/></li>
-                    <li><a href="./derde.html"><img src="./images/schep-icoon.png"/></li>
-                    <li><a href="./vijfde.html"><img src="./images/blaadjes.png"/></li>
-                </ul>
+              <ul>
+                  <li><a href="./index.html"><img src="./images/homebutton.png" alt="Huis"></a></li>
+                  <li><a href="./tweede.html"><img src="./images/boek.png" alt="Een boek"></a></li>
+                  <li><a href="./derde.html"><img src="./images/schep-icoon.png" alt="Twee tuingereedschappen"></a></li>
+                  <li><a href="./vijfde.html"><img src="./images/blaadjes.png" alt="Bladeren"></a></li>
+              </ul>
             </nav>
-        </footer>
-    </body> 
-</html>
+          </footer>
+      </body> 
+  </html>

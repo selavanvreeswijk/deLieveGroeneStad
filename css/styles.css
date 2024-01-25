@@ -13,26 +13,38 @@
     src: url('../fonts/anti.TTF') format('TrueType');
 }
 
+/*------------------------------------------algemeen------------------------------------------------*/
+
 h1, h2{
     font-family: 'DirtDevil', sans-serif; 
     letter-spacing: 0.04em;
-    font-size: 2em;
-    color: #e8a72f;
-  }
+    font-size: 2.2em;
+    color: rgb(224, 232, 189);
+}
 
 html{
-    background-color: #DCE5B9;
+    background-color: rgb(137, 160, 126);
 
     font-family: 'Antigoni', sans-serif; 
     letter-spacing: 0.02em;
+    margin-bottom: 7em;
 }
 
-p{
+header p,p, figcaption{
+    color: #DCE5B9;
     line-height: 1.5em;
 }
 
-body{
-    margin-bottom: 7em;
+strong{
+    font-weight: 800;
+}
+
+img{
+    object-fit: cover;
+}
+
+.achtergrondplaatje{ /*voor screen readers*/
+    display: none;
 }
 
 /* body header */
@@ -45,27 +57,24 @@ body{
     align-items: center;
 }
 
-.index header img{
-    object-fit: cover;
-    height: 13em;
-}
-
 .index header h1{
     margin-top: 1em;
-    margin-bottom: 0.8em;
 }
 
 .index header h2{
-    margin: 0.8em 0.1em 0.2em 0.1em;
+    margin: 0em 0.1em 0.3em 0.1em;
     font-size: 1.7em;
 }
 
 .index header p{
-    font-size: 0.8em;
-    margin-bottom: 1em;
+    font-size: 0.88em;
 }
 
-/*------------------------------------------overige pagina's nav------------------------------------------------*/
+.index header img{
+    height: 18em;
+}
+
+/*-----------overige pagina's header---------*/
 
 header a{
     display: flex;
@@ -78,13 +87,11 @@ header a{
 }
 
 header img{
-    object-fit: cover;
     height: 5em;
 }
 
 header p{
     font-size: 1em;
-    color: black;
     margin-top: 0.5em;
 }
 
@@ -93,14 +100,14 @@ header p{
 /*------------------------------------------index------------------------------------------------*/
 
 .index{
-    background-image: url(../images/groeneweg.png); /* bron icoon weg https://www.youtube.com/watch?v=1Q1ESDwQ_Uk&list=PLVIHEPTP4QFdnVX4B7mAwk8GMjXNJg9JG&index=13&t=115s*/
+    background-image: url(../images/groenweg.png); /* bron icoon weg https://www.youtube.com/watch?v=1Q1ESDwQ_Uk&list=PLVIHEPTP4QFdnVX4B7mAwk8GMjXNJg9JG&index=13&t=115s*/
     background-size: cover;
 
     position: absolute;
 }
 
 .index main p{ 
-    margin: 1em 1.5em 2em 1.5em;
+    margin: 0.7em 1.5em 1em 1.5em;
     text-align: center;
 }
 
@@ -110,33 +117,12 @@ header p{
     align-items: center;
 }
 
-.index div img{
-    margin-bottom: 1.1em;
-    object-fit: cover;
+.index div img{ /*pijl*/
+    margin-bottom: 1em;
     height: 3.6em;
 }
 
-.index nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    margin-left: 1em;
-    margin-right: 2.1em;
-}
-
-.index nav img{ 
-   object-fit: cover;
-   height: 4em;
-
-   margin-bottom: 2em;
-}
-
 /*------------------------------------------tweede pagina------------------------------------------------*/
-
-.voorgrondplaatje{ /*voor screen readers*/
-    display: none;
-}
 
 .tweede{
    background-image: url(../images/wortels-achtergrond.png); /*bron wortels maken https://www.youtube.com/watch?v=qtJmvmi5mPM&list=PLVIHEPTP4QFdnVX4B7mAwk8GMjXNJg9JG&index=19&t=205s*/
@@ -145,27 +131,23 @@ header p{
    position: absolute;
 }
 
-.tweede footer{
-    margin-bottom: 7em;
-}
-
-.tweede article{
+.tweede figure{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
-    margin-top: 20em;
+    margin-top: 8em;
     margin-left: 1em;
     margin-bottom: 2em;
 }
 
-.tweede article img{
+.tweede figure img{ /*pijl*/
     margin-left: 2em;
     height: 3em;
     margin-top: 1em;
 }
 
-.tweede article p{
+.tweede figcaption{
     font-size: 0.9em;
 }
 
@@ -177,60 +159,22 @@ header p{
     margin: 1em;
 }
 
-.tweede h1{
-    margin-bottom: 0.7em;
+.tweede section p{
+    margin-top: 1em;
 }
 
-.tweede section img{
-    object-fit: cover;
-    height: 10em;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-}
-
-.tweede section img:first-of-type{
+.tweede section img:first-of-type{ /*soep*/
     align-self: flex-end;
-    margin-right: 1em;
+    margin-right: 0.75em;
+
+    height: 7em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
-.tweede main nav a{
-    text-decoration: none;
-    color: black;
-}
-
-.tweede nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    background-color: white;
-    border-radius: 4em;
-    list-style: none;
-
-    position: fixed;
-    bottom: 0.5em;
-    left: 3.2em;
-}
-
-.tweede nav img{
-    height: 3em;
-    padding: 1em;
-}
-
-.tweede section a{
-    text-align: center;
-
-    color: black;
-    text-decoration: none;
-    font-size: 1em;
-  
-    border: 1px solid black;
-    background-color: white;
-    border-radius: 1.20em;
-    width: 35%;
-
-    margin: 1.20em;
-    padding: 0.2em;
+.tweede section img:last-of-type{ /*community*/
+    height: 9em;
+    margin-top:1em;
 }
 
 /*------------------------------------------derde pagina------------------------------------------------*/
@@ -239,46 +183,47 @@ header p{
     flex-direction: column;
     align-items: center;
 
-    margin: 1.2em;
-}
-
-.bovenaan img{
-    height: 15em;
-    margin-top: 1em;
+    margin: 1em;
 }
 
 .derde h1{
-    margin-top: 0.1em;
-    margin-bottom: 0.5em;
-    animation: kleurentekst 5s linear 3s infinite normal none running;
+    margin-bottom: 0.4em;
 }
 
-@keyframes kleurentekst {
-    0% {
-        color: #e8a72f;
+.bovenaan p{
+    padding-bottom: 0.75em;
+}
+
+.bovenaan div{
+    align-self: flex-start;
+    padding-left: 4em;
+}
+
+.bovenaan img:first-of-type{ /*persoon*/
+    height: 11em;
+}
+
+.bovenaan img:last-of-type{ /*groene duim*/
+    height: 7em;
+    position: absolute;
+    top: 24.9em;
+    left: 11em;
+    animation: duim 10s ease-in-out infinite;
+}
+
+@keyframes duim {
+    0%, 100% {
+      transform: scale(1);
     }
-  
-    25% {
-        color: #eac580;
-    }
-    
-    75% {
-      color: #f7d189;
-    }
-    
-    100%{
-      color: #ffc250;
+    50% {
+      transform: scale(1.2);
     }
 }
 
-.derde h2{
+.derde h2{ /*titels*/
     font-family: 'Antigoni', sans-serif;
     font-size: 1.3em;
-    color: rgb(221, 155, 117);
-}
-
-.derde section p{
-    margin-top: 0.1em;
+    color: rgb(230, 168, 132);
 }
 
 .flex{
@@ -288,20 +233,21 @@ header p{
     margin: 1em;
 }
 
-.flex p{
-    font-size: 0.7em;
-}
-
 .flex img{
     height: 8em;
+}
+
+.flex p{
+    font-size: 0.7em;
 }
 
 .babyflex{
     display: flex;
     flex-direction: row;
+
     background-color: #4B3E30;
-    border: 3px solid #B89671;
-    border-radius: 0.5em;
+    border: 4.5px solid #B89671;
+    border-radius: 0.7em;
 
     margin-bottom: 1em;
 }
@@ -311,152 +257,109 @@ header p{
     flex-direction: column;
     align-items: flex-start;
 
-    padding: 0.5em;
+    padding-top: 0.2em;
 }
 
 .babyflex section p{
     color: rgb(221, 155, 117);
-}
-
-.button{
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-
-    color: black;
-    text-decoration: none;
-  
-    border: 1.25px solid black;
-    background-color: white;
-    border-radius: 1em;
-
-    max-width: 55%;
-    padding: 0.2em;
+    padding-top: 0.3em;
 }
 
 .babyflex section a{
     font-size: 0.6em;
     color: rgb(221, 186, 167);
+
     margin-top: 0.5em;
-
-    border: none;
-    text-decoration: underline;
-}
-
-.derde nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    background-color: white;
-    border-radius: 4em;
-    list-style: none;
-
-    position: fixed;
-    bottom: 0.5em;
-    left: 3.2em;
-}
-
-.derde nav img{
-    height: 3em;
-    padding: 1em;
 }
 
 /*------------------------------------------vierde pagina's------------------------------------------------*/
 
-.vierde main{
+.vierde{ /*moestuinbak*/
+    background-image: url(../images/moestuinbak.png);
+    background-size: cover;
+}
+
+.vierde section{ 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
-.vierde section{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.vierde section h2{ /*titel in de bak*/
+    font-size: 1.7em;
+    color: rgb(230, 168, 132);
+    font-family: 'Antigoni', sans-serif;
 
-    padding: 0em 2.1em 2.2em 2.2em;
-
-    background-image: url(../images/moestuinachtergrond.png);
-    background-size: cover;
-
-    margin-top:0.5em;
+    margin-top: 1.9em;
 }
 
-.vierde main section h2{
-    align-self: center;
-    font-size: 2em;
-    margin-top: 1.6em;
-    color: rgb(221, 155, 117);
-    font-family: 'Antigoni', sans-serif; 
-}
-
-.vierde main img{
-    height: 13em;
+.vierde main img{ /*icoon voorbeeld*/
+    height: 11em;
     align-self: center;
 }
 
-.vierde main section p{
-    padding: 0em 1.2em;
+.vierde section p{ /*tekst*/
+    padding: 0em 4.4em;
     color: rgb(221, 155, 117);
 }
 
-.vierde main section p a{
+.vierde section p a{ /*links*/
     color: rgb(221, 186, 167);
 }
 
-.vierde main div{
-    margin-top: 3em;
-    margin-bottom: 1em;
-}
+.vierde div a{ /*button*/
+    display: block;
+    margin: 0 auto;
+    width: 37%;
 
-.vierde main div a{
-    text-align: center;
-
-    color: black;
+    color: rgb(226, 174, 143);
     text-decoration: none;
-  
-    border: 1.25px solid black;
-    background-color: white;
-    border-radius: 1.20em;
 
-    padding: 0.5em;
-}
+    border: 1px solid #B89671;
+    padding: 13px 20px 13px;
 
-.vierde nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    background-color: #4B3E30;
+    box-shadow: #4B3E30 4px 4px;
 
-    background-color: white;
-    border-radius: 4em;
-    list-style: none;
-
-    position: fixed;
-    bottom: 0.5em;
-    left: 3.2em;
-}
-
-.vierde nav img{
-    height: 3em;
-    padding: 1em;
+    margin-top: 4.4em;
+    margin-bottom: 1em;
 }
 
 /*------------------------------------------vijfde pagina------------------------------------------------*/
 
-.vijfde{
-    background-image: url(../images/wolken-achtergrond.png);
+.vijfde{ /*wolken*/
+    background-image: url(../images/wolkentest.png);
     background-size: cover;
 
     position: absolute;
-    left:0;
-    right:0;
- }
+}
 
-.vijfde footer{
-    margin-bottom: 7em;
+.vijfde main div img:last-of-type{ /*wolk*/
+    width: 3.5em; 
+    /* animation: wolkje 30s ease-in-out infinite running; */
+}
+
+@keyframes wolkje { /*wolk*/
+    0%, 100% {
+        transform: translateX(100vw); /*de studentenassitent heeft me bij internetstandaarden deze regel geleerd, heb ik nu zelf toegepast :)*/
+    }
+    25% {
+        transform: translateX(10);
+    }
+
+    50% {
+        transform: translateX(15vw);
+    }
+
+    90% {
+        transform: translateX(23vw);
+    } 
+}
+
+.vijfde header p{ /*zodat deze nog wel zichtbaar is*/
+    color: rgb(94, 91, 91);
 }
 
 .vijfde section{
@@ -464,62 +367,96 @@ header p{
     flex-direction: column;
     align-items: center;
 
-    margin-top: 6.8em;
-    margin-bottom: 2em;
+    margin-top: 5em;
 }
 
-.vijfde section img{
-    object-fit: cover;
-    height: 24em;
-    margin-top: 1em;
+.vijfde h1{
+    animation: kleurentekst 6s linear 4s infinite normal none running;
 }
 
-strong{
-    font-weight: 800;
+@keyframes kleurentekst { /*dan vallen de kleuren meer op*/
+    0%, 100% {
+        color: rgb(224, 232, 189);
+    }
+  
+    25% {
+        color: #959a7e;
+    }
+    
+    75% {
+      color: #c4cca6;
+    }
 }
 
-.vijfde div{
+.vijfde section img{ /*vrachtwagen en hand*/
+    height: 10.5em;
+    margin-top: 3em;
+}
+
+.vijfde div:last-of-type{ /*begin wolken onderaan*/
     display: flex;
     flex-direction: column;
 }
 
-.vijfde div p:nth-of-type(odd){
+.vijfde div:last-of-type p:nth-of-type(odd){
     width: 250px;
-    margin-bottom: 2em;
-    margin-top: 5em;
+
+    margin-bottom: 9.5em;
+    margin-top: 4em;
     margin-left: 1em;
-    color: rgb(221, 155, 117);
+
+    color: rgb(118, 112, 112);
 }
 
-.vijfde div p:nth-of-type(even){
+.vijfde div:last-of-type p:nth-of-type(even){
     align-self: flex-end;
+
     width: 300px;
-    margin-top: 8em;
+
     margin-bottom: 2em;
     margin-right: 1em;
-    color: rgb(221, 155, 117);
+
+    color: rgb(127, 126, 126);
 }
 
-.vijfde div p a{
+.vijfde p a{
     color: rgb(221, 186, 167);
 }
 
-.vijfde ul{
+.vijfde footer{
+    margin-bottom: 10em;
+}
+
+/* footer */
+
+.index nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
 
-    background-color: white;
-    border-radius: 4em;
-    list-style: none;
+.index nav img{ 
+   height: 4em;
+
+   margin-bottom: 1.5em;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
 
     position: fixed;
-    bottom: 0.5em;
-    left: 3.2em;
+    bottom: 0;
+
+    background-color: rgb(134, 160, 123);
+    list-style: none;
 }
 
-.vijfde nav img{
-    height: 3em;
-    padding: 1em;
+nav img{
+    height: 4em;
+    padding: 1.1em;
 }
 
+.tweede footer{
+    margin-bottom: 8em;
+}
