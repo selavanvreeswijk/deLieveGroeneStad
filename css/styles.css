@@ -33,6 +33,7 @@ html{
 header p,p, figcaption{
     color: #DCE5B9;
     line-height: 1.5em;
+    font-family: 'Antigoni', sans-serif; 
 }
 
 strong{
@@ -453,7 +454,7 @@ nav ul{
 
 nav img{
     height: 4em;
-    padding: 1.1em;
+    padding: 1.2em;
 }
 
 .tweede footer{
