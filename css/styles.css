@@ -36,7 +36,7 @@ header p,p, figcaption{
 }
 
 strong{
-    font-weight: 800;
+    font-weight: 300;
 }
 
 img{
@@ -216,7 +216,7 @@ header p{
       transform: scale(1);
     }
     50% {
-      transform: scale(1.2);
+      transform: scale(1.3);
     }
 }
 
@@ -312,50 +312,49 @@ header p{
 .vierde div a{ /*button*/
     display: block;
     margin: 0 auto;
-    width: 37%;
+    width: 15%;
+    text-align: center;
 
     color: rgb(226, 174, 143);
     text-decoration: none;
 
     border: 1px solid #B89671;
-    padding: 13px 20px 13px;
+    padding: 10px 20px 13px;
 
     background-color: #4B3E30;
     box-shadow: #4B3E30 4px 4px;
 
-    margin-top: 4.4em;
-    margin-bottom: 1em;
+    margin-top: 2.5em;
+    margin-bottom: 0.5em;
 }
 
 /*------------------------------------------vijfde pagina------------------------------------------------*/
 
 .vijfde{ /*wolken*/
-    background-image: url(../images/wolkentest.png);
+    background-image: url(../images/wolken.png);
     background-size: cover;
+    left: 0;
+    right: 0;
 
     position: absolute;
 }
 
 .vijfde main div img:last-of-type{ /*wolk*/
     width: 3.5em; 
-    /* animation: wolkje 30s ease-in-out infinite running; */
+    position: relative;
+    animation: wolkje 10s ease-in-out infinite running;
 }
 
-@keyframes wolkje { /*wolk*/
-    0%, 100% {
-        transform: translateX(100vw); /*de studentenassitent heeft me bij internetstandaarden deze regel geleerd, heb ik nu zelf toegepast :)*/
+@keyframes wolkje{
+    0% {
+        left: 300px;
     }
-    25% {
-        transform: translateX(10);
-    }
-
     50% {
-        transform: translateX(15vw);
+        left: 50px;
     }
-
-    90% {
-        transform: translateX(23vw);
-    } 
+    100% {
+        left: 300px;
+    }
 }
 
 .vijfde header p{ /*zodat deze nog wel zichtbaar is*/
@@ -424,7 +423,7 @@ header p{
 }
 
 .vijfde footer{
-    margin-bottom: 10em;
+    margin-bottom: 15em;
 }
 
 /* footer */
